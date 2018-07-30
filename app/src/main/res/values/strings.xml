@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Rajkot Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Local Delicacies-->
+    <string name="delicacy_1">Pani Puri</string>
+    <string name="description_1">Netri Pani Puri, 150 feet Ring Road</string>
+
+    <string name="delicacy_2">Dosa</string>
+    <string name="description_2">Mom\'s Dosa, Sadhu Vaswani Road</string>
+
+    <string name="delicacy_3">Milk Shakes</string>
+    <string name="description_3">Jamnagari Falooda, Raiya Road</string>
+
+    <string name="delicacy_4">Bhel</string>
+    <string name="description_4">Sargam Fast Food, Kasturba Road</string>
+
 </resources>
