@@ -32,15 +32,26 @@ public class InfoAdapter extends ArrayAdapter<InfoNugget> {
         //Setting the Title
         TextView titleTextView = listItemView.findViewById(R.id.title);
         titleTextView.setText(currentNugget.getTitle());
-        //Setting the Image
+
+        //Whether image exists or not
         ImageView imageView = listItemView.findViewById(R.id.imageView);
-        imageView.setImageDrawable(ContextCompat.getDrawable(getContext(), currentNugget.getPhotoId()));
+        if (currentNugget.getPhotoId() != 0) { //If imageid is not 0, then set image
+            //Setting the Image
+            imageView.setImageDrawable(ContextCompat.getDrawable(getContext(), currentNugget.getPhotoId()));
+        } else { //else hide the ImageView
+            imageView.setVisibility(View.GONE);
+        }
         //Setting the Description
         TextView descriptionTextView = listItemView.findViewById(R.id.description);
         descriptionTextView.setText(currentNugget.getDescription());
-        //Hiding the TrailText
+        //Whether TrailText exists or not
         TextView trailTextView = listItemView.findViewById(R.id.trail_text);
-        trailTextView.setVisibility(View.GONE);
+        if (currentNugget.getTrailText() != 0) { //If trailtext id is not 0, then set trailtext
+            //Set trailtext
+            trailTextView.setText(currentNugget.getTrailText());
+        } else { //else hide trailtext view
+            trailTextView.setVisibility(View.GONE);
+        }
 
         return listItemView;
     }
