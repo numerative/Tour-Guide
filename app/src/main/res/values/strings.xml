@@ -14,4 +14,35 @@
     <string name="delicacy_4">Bhel</string>
     <string name="description_4">Sargam Fast Food, Kasturba Road</string>
 
+    <!--Places of Interest-->
+    <string name="place_1">KaBa Gandhi No Delo</string>
+    <string name="places_description_1">Kadiya Navline, Dharmendra Road</string>
+    <string name="places_trail_text_1">Residence where Mohandas Gandhi was brought up.</string>
+
+    <string name="place_2">Watson Mueseum</string>
+    <string name="places_description_2">Jubilee Garden</string>
+    <string name="places_trail_text_2">Exhibits artifacts and precious objects from the princely state of Rajkot and more.</string>
+
+    <string name="place_3">Fun World</string>
+    <string name="places_description_3">Race Course Ground</string>
+    <string name="places_trail_text_3">Affordable and Quality amusement park for children and adults.</string>
+
+    <string name="place_4">Rotary Dolls Museum</string>
+    <string name="places_description_4">Yagnik Road</string>
+    <string name="places_trail_text_4">Exhibiting dolls from around the globe.</string>
+
+    <string name="place_5">Aji Dam</string>
+    <string name="places_description_5">Bhavnagar Road</string>
+    <string name="places_trail_text_5">Water Reservoir, Gardens, Aquarium and more.</string>
+
+    <!--Emergency Contacts-->
+    <string name="police">Police</string>
+    <string name="police_description">100</string>
+
+    <string name="womens_safety">Women\'s Safety</string>
+    <string name="womens_safety_description">182</string>
+
+    <string name="ambulance">Ambulance</string>
+    <string name="ambulance_description">108</string>
+
 </resources>

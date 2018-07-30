@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class LocalDelicacies extends Fragment {
 
     ArrayList<InfoNugget> infoNuggetsList;
+
     public LocalDelicacies() {
         // Required empty public constructor
     }
@@ -34,10 +35,9 @@ public class LocalDelicacies extends Fragment {
 
     private void generateLocalDelicaciesList() {
         infoNuggetsList = new ArrayList<>();
-        infoNuggetsList.add(new InfoNugget(R.string.delicacy_1, R.string.description_1));
-        infoNuggetsList.add(new InfoNugget(R.string.delicacy_2, R.string.description_2));
-        infoNuggetsList.add(new InfoNugget(R.string.delicacy_3, R.string.description_3));
-        infoNuggetsList.add(new InfoNugget(R.string.delicacy_4, R.string.description_4));
-
+        infoNuggetsList.add(new InfoNugget(R.string.delicacy_1, R.drawable.pani_puri, R.string.description_1));
+        infoNuggetsList.add(new InfoNugget(R.string.delicacy_2, R.drawable.dosa, R.string.description_2));
+        infoNuggetsList.add(new InfoNugget(R.string.delicacy_3, R.drawable.falooda, R.string.description_3));
+        infoNuggetsList.add(new InfoNugget(R.string.delicacy_4, R.drawable.bhel, R.string.description_4));
     }
 }

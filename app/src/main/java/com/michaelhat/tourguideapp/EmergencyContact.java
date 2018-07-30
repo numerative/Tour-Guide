@@ -6,8 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 
 public class EmergencyContact extends Fragment {
+
+    ArrayList<InfoNugget> emergencyList;
 
     public EmergencyContact() {
         // Required empty public constructor
@@ -17,6 +21,18 @@ public class EmergencyContact extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_emergency_contact, container, false);
+        View view = inflater.inflate(R.layout.fragment_emergency_contact, container, false);
+
+        generateEmergencyList();
+
+        return view;
     }
+
+    private void generateEmergencyList() {
+        emergencyList = new ArrayList<>();
+        emergencyList.add(new InfoNugget(R.string.police, R.string.police_description));
+        emergencyList.add(new InfoNugget(R.string.womens_safety, R.string.womens_safety_description));
+        emergencyList.add(new InfoNugget(R.string.ambulance, R.string.ambulance_description));
+    }
+
 }

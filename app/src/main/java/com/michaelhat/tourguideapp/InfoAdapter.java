@@ -2,10 +2,12 @@ package com.michaelhat.tourguideapp;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -30,6 +32,9 @@ public class InfoAdapter extends ArrayAdapter<InfoNugget> {
         //Setting the Title
         TextView titleTextView = listItemView.findViewById(R.id.title);
         titleTextView.setText(currentNugget.getTitle());
+        //Setting the Image
+        ImageView imageView = listItemView.findViewById(R.id.imageView);
+        imageView.setImageDrawable(ContextCompat.getDrawable(getContext(), currentNugget.getPhotoId()));
         //Setting the Description
         TextView descriptionTextView = listItemView.findViewById(R.id.description);
         descriptionTextView.setText(currentNugget.getDescription());
