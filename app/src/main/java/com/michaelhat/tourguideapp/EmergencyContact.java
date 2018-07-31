@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -22,8 +23,11 @@ public class EmergencyContact extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_emergency_contact, container, false);
-
         generateEmergencyList();
+
+        InfoAdapter adapter = new InfoAdapter(getContext(), emergencyList);
+        ListView emergencyListView = view.findViewById(R.id.emergency_list_view);
+        emergencyListView.setAdapter(adapter);
 
         return view;
     }
