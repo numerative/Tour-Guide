@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Rajkot Tour Guide</string>
 
+    <!--Tab Titles-->
+    <string name="tab_delicacies">Delicacies</string>
+    <string name="tab_places">Places</string>
+    <string name="tab_shopping">Shopping</string>
+    <string name="tab_emergency">Emergency</string>
+    <string-array name="tabs">
+        <item>@string/tab_delicacies</item>
+        <item>@string/tab_places</item>
+        <item>@string/tab_shopping</item>
+        <item>@string/tab_emergency</item>
+    </string-array>
+
     <!--Local Delicacies-->
     <string name="delicacy_1">Pani Puri</string>
     <string name="description_1">Netri Pani Puri, 150 feet Ring Road</string>
@@ -44,5 +56,15 @@
 
     <string name="ambulance">Ambulance</string>
     <string name="ambulance_description">108</string>
+
+    <!--Shopping Places-->
+    <string name="shopping_1">Traditional Women\'s Apparel</string>
+    <string name="shopping_description_1">RGS, Yagnik Road, Opp. Rotary Dolls Museum.</string>
+
+    <string name="shopping_2">Apparel Shopping for Men and Women</string>
+    <string name="shopping_description_2">Dresswala, Yagnik Road.</string>
+
+    <string name="shopping_3">Shoes and Footewar</string>
+    <string name="shopping_description_3">Superfine Footwear, Dharmendra Road.</string>
 
 </resources>

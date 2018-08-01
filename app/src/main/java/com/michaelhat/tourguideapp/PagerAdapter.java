@@ -1,14 +1,16 @@
 package com.michaelhat.tourguideapp;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class PagerAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[]{"Delicacies", "Places", "Emergency"};
+    private String tabTitles[];
 
-    public PagerAdapter(FragmentManager fm) {
+    public PagerAdapter(FragmentManager fm, Context context) {
         super(fm);
+        tabTitles = context.getResources().getStringArray(R.array.tabs);
     }
 
     @Override
@@ -22,6 +24,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 switchToFragment = new PlacesInterest();
                 break;
             case (2):
+                switchToFragment = new ShoppingFragment();
+                break;
+            case (3):
                 switchToFragment = new EmergencyContact();
         }
         return switchToFragment;
@@ -34,6 +39,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 }

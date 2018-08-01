@@ -24,6 +24,13 @@
 | 4. | Rotary Dolls Museum | Yagnik Road | Exhibiting dolls from around the globe |
 | 5. | Aji Dam | Bhavnagar Road | Water Reservoir, Gardens, Aquarium and more |
 
+### Shopping :moneybag:
+| Sr | Item | Location |
+|----|------|----------|
+| 1. | Traditional Apparels for Women | RGS, Yagnik Road, Opp. Rotary Dolls Museum |
+| 2. | Apparel Shopping for Men & Women | Dresswala, Yagnik Road |
+| 3. | Shoes and Footwear | Superfine Footwear, Dharmendra Road |
+
 ### Emergency Info :rotating_light:
 | Sr | Emergency | Call on |
 |----|-----------|---------|
